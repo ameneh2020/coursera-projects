@@ -12,11 +12,11 @@
     $scope.sayMessage=function(){
       
       var itemsstr=$scope.items;
-      var items=items.split(',');
+      var itemlist=itemsstr.split(',');
       var count=0;
       
      
-      for (var i = 0; i < itemsstr.split(',').length; i++) {
+      for (var i = 0; i < itemlist.length; i++) {
          //I do NOT consider empty item
         if(items[i]!=""){
           count=count+1;
