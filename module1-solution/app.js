@@ -10,16 +10,27 @@
     $scope.items="";
 
     $scope.sayMessage=function(){
-      var items=$scope.items;
-      var length=items.split(',').length;
+      
+      var itemsstr=$scope.items;
+      var items=items.split(',');
+      var count=0;
+      
+     
+      for (var i = 0; i < items.split(',').length; i++) {
+         //I do NOT consider empty item
+        if(items[i]!=""){
+          count=count+1;
+        }
+      }
+      
 
-      if(items==""){
+      if(count==0){
         $scope.message=  "Please enter data first";
       }
-      else if(length<=3){
+      else if(count<=3){
         $scope.message=  "Enjoy!";
       }
-      else if(length>3){
+      else if(count>3){
         $scope.message=  "Too much!";
       }
     }
