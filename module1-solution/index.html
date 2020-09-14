@@ -11,6 +11,7 @@
     <div ng-controller='LunchCheckController'>
       <div>
         <input  type="text" ng-model="items"  placeholder="list comma separated dishes">
+        <span>I do NOT consider empty item</span>
       </div>
       <div>
         <button class="btn btn-default" ng-click="sayMessage()">Check If Too Much</button>
