@@ -16,7 +16,7 @@
       var count=0;
       
      
-      for (var i = 0; i < items.split(',').length; i++) {
+      for (var i = 0; i < itemsstr.split(',').length; i++) {
          //I do NOT consider empty item
         if(items[i]!=""){
           count=count+1;
