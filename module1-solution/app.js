@@ -17,7 +17,7 @@
       
      
       for (var i = 0; i < itemlist.length; i++) {
-         //I do NOT consider empty item
+         //I do NOT consider empty item as a item
         if(itemlist[i]!=""){
           count=count+1;
         }
